@@ -50,13 +50,6 @@ fun RestaurantMenuScreen(navController: NavController, restaurantId: Int) {
         }
     ) { innerPadding ->
         Column(modifier = Modifier.padding(innerPadding)) {
-            AsyncImage(
-                model = restaurant.imageUrl,
-                contentDescription = restaurant.name,
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .height(200.dp)
-            )
             Spacer(modifier = Modifier.height(8.dp))
             Text(
                 text = restaurant.description,
